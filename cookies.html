@@ -18,7 +18,7 @@
     font-size: 3rem;
     margin-bottom: 40px;
     letter-spacing: 4px;
-    color: #34495e;
+    color:#ff7e5f;
   }
   .cookies-grid {
     display: grid;
@@ -130,6 +130,37 @@
   background-color: #1ebd5a;
   transform: translateY(-2px);
   }
+.product-nav {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin: 40px auto;
+  padding: 10px 0;
+  background-color: #fff;
+}
+
+.product-nav button {
+  background: linear-gradient(135deg, #ff7e5f, #feb47b);
+  color: white;
+  border: none;
+  padding: 14px 28px;
+  margin: 8px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 17px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.product-nav button:hover {
+  transform: scale(1.05);
+  background: linear-gradient(135deg, #feb47b, #ff7e5f);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+
   @media (max-width: 1100px) {
     .cookies-grid {
       grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
@@ -154,6 +185,11 @@
 </head>
 <body>
   <h1>Cookies Premium</h1>
+  <nav class="product-nav">
+    <button onclick="location.href='cookies.html'">Cookies Premium</button>
+    <button onclick="location.href='sambal.html'">Sambal Premium</button>
+    <button onclick="location.href='keripik.html'">Keripik Ubi</button>
+  </nav>
   <div class="cookies-grid">
     <!-- List cookies sesuai data, gambar placeholder dari unsplash dengan tema cookies -->
     <div class="cookie-card" data-price="22">
